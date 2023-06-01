@@ -13,7 +13,7 @@ const currentTime = () => {
     // hh = 0;
     // mm = 0;
     // ss = 0;
-    // localStorage.setItem('date', 2);
+    localStorage.setItem('date', 2);
 
 // check if the date is different from the one in the local Storage and set a new background image
 
@@ -29,7 +29,7 @@ const currentTime = () => {
         hh = 12;
     }
 
-    if (hh >= 12) {
+    if (hh > 12) {
         // hh = hh - 12;
         hh -= 12;
         session = "PM";
@@ -45,7 +45,7 @@ const currentTime = () => {
     mm = (mm < 10) ? `0${mm}` : mm;
     ss = (ss < 10) ? `0${ss}` : ss;
 
-    let time = `${hh}:${mm}:${session}`;
+    let time = `${hh}:${mm} ${session}`;
 
     // if (ss % 2 === 0) {
     //     document.getElementById('clock').style.textShadow = '0 0 10px white'

@@ -50,16 +50,17 @@ nav ul li:first-child, .nav-left-weather, footer ul li:first-child {
 }
 
 .main-section h1 {
-    font-size: 100px;
+    font-size: 8vw;
+    font-weight: 700;
 }
 
 .main-section h3 {
-    font-size: 40px;
+    font-size: 310%;
     font-weight: 600;
 }
 
 .main-section h4 {
-    font-size: 20px;
+    font-size: 180%;
     font-weight: 500;
 }
 
@@ -76,4 +77,8 @@ nav ul li:first-child, .nav-left-weather, footer ul li:first-child {
 
 .footer-mid {
     margin-left: -14%;
+}
+
+.question {
+    font-size: 180%;
 }
